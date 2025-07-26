@@ -27,7 +27,7 @@ jobs:
 
       - name: Build release distributions
         run: |
-          python -m pip install -r .\requirements\all.txt
+          python -m pip install -r "./requirements/all.txt"
           python -m build
 
       - name: Upload distributions
